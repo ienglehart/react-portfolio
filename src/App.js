@@ -1,36 +1,36 @@
-import React, { useState } from 'react';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import React from 'react';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import About from './components/About';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Router, Route, Switch } from "react-router";
 
-import './App.css';
+const showAbout = () => {
+  if (window.location.pathname === "/"){
+    return <About />
+  }
+}
+const showProjects = () => {
+  if (window.location.pathname === "/portfolio"){
+    return <Projects />
+  }
+}
+const showContact = () => {
+  if (window.location.pathname === "/contact"){
+    return <Contact />
+  }
+}
 
 function App() {
-  const [categories] = useState([
-    {
-      name: 'Portfolio',
-      description: 'Portfolio of Web Development Projects i have completed',
-    },
-    { name: 'Projects', description: 'Portraits of people in my life' }
-  ]);
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
-  const [contactSelected, setContactSelected] = useState(false);
-
   return (
     <div>
       <Nav></Nav>
       <main>
-        {!contactSelected ? (
-          <>
-            <Projects currentCategory={currentCategory}></Projects>
-          </>
-        ) : (
-          <Contact></Contact>
-        )}
-      </main>
+        {showAbout()}
+        {showProjects()}
+        {showContact()}
+      </main> 
     </div>
   );
 }

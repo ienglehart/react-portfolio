@@ -1,24 +1,38 @@
 import React from 'react';
-import Nav from '../Header';
 
-<header>
-  <h2>
-    <a href="/">
-      <span role="img" aria-label="camera"> 📸</span> Oh Snap!
-    </a>
-  </h2>
-  <nav>
-    <ul className="flex-row">
-      <li className="mx-2">
-        <a href="#about">
-          About me
-        </a>
-      </li>
-      <li>
-        <span>Contact</span>
-      </li>
-    </ul>
-  </nav>
-</header>
+function Nav(props) {
+  const {
+
+  } = props;
+
+  return (
+    
+    <nav className="nav flex-row px-1 bg-light text-center">
+      <h3 className="text-center mx-3 mt-1">
+        Ian Englehart
+      </h3>
+      <div>
+        <ul className="list-group list-group-horizontal flex-row my-auto">
+          <li className="list-group-item mx-2">
+            <a data-testid="link m-2 p-2" href="/">
+              about me
+            </a>
+          </li>
+          <li className="list-group-item mx-2">
+            <a data-testid="link m-2 p-2" href="/portfolio">
+              portfolio
+            </a>
+          </li>
+          <li className="list-group-item mx-2">
+            <a data-testid="link m-2 p-2" href="/contact">
+              contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+  );
+}
 
 export default Nav;
