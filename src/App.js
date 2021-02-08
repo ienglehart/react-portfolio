@@ -7,17 +7,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Router, Route, Switch } from "react-router";
 
 const showAbout = () => {
-  if (window.location.pathname === "/"){
+  if (window.location.pathname === "/react-portfolio/"){
     return <About />
   }
 }
 const showProjects = () => {
-  if (window.location.pathname === "/portfolio"){
+  if (window.location.pathname === "/react-portfolio/portfolio"){
     return <Projects />
   }
 }
 const showContact = () => {
-  if (window.location.pathname === "/contact"){
+  if (window.location.pathname === "/react-portfolio/contact"){
     return <Contact />
   }
 }
