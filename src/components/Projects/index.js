@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Thumbnail from './Thumbnail.js';
+import Carousel from './Carousel.js'
 
 export default class Productlist extends Component {
     render() {
@@ -8,7 +9,8 @@ export default class Productlist extends Component {
                 <div className="py-5">
                     <div className="container">
                         <div className="row pb-5">
-                            <Thumbnail></Thumbnail>
+                            {/*<Thumbnail></Thumbnail>*/}
+                            <Carousel />
                         </div>
                     </div>
                 </div>
