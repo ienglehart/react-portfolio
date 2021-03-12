@@ -37,7 +37,43 @@
   }
 }
 
-.holder {
-  display: grid;
-  place-items: center;
+.holder-card {
+  border:none;
+  background-color: transparent;
 }
+
+.carousel-sized{
+  width: 600px;
+  height: 600px;
+}
+.fit-image{
+  width: 100%;
+  object-fit: cover;
+  }
+
+.accordion-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  min-width: 25%;
+  max-width: 25%;
+}
+
+.accordion-card {
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  min-width: 50%;
+  max-width: 50%;
+}
+
+
