@@ -4,10 +4,10 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import About from './components/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Router, Route, Switch } from "react-router";
+//import { Router, Route, Switch } from "react-router";
 
 const showAbout = () => {
-  if (window.location.pathname === "/react-portfolio/"){
+  if (window.location.pathname === "/react-portfolio"){
     return <About />
   }
 }

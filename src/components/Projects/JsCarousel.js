@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
+// This is not in use
+
 export default class JsCarousel extends Component {
     render() {
         return (
