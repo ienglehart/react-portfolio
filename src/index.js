@@ -7,6 +7,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import{ init } from 'emailjs-com';
+init("user_urBSH40An3KgHVj0MTryY");
 
 ReactDOM.render(
   <React.StrictMode>

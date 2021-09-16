@@ -1,55 +1,32 @@
 import React from 'react';
-
-// import { validateEmail } from '../../utils/helpers';
+import '../../App.css';
+import emailjs from 'emailjs-com';
 
 function Contact() {
-  //css styles that i should probably move to a dedicated css stylesheet
-  const formStyle = { 
-    maxWidth: "420px",
-    margin: "50px auto" 
-  };
-  const feedbackInput ={
-    color:"black",
-    fontFamily: "Helvetica, Arial, sans-serif",
-    fontWeight: "500",
-    fontSize: "18px",
-    borderRadius: "5px",
-    lineHeight: "22px",
-    backgroundColor: "transparent",
-    border: "2px solid #CC6666",
-    transition: "all 0.3s",
-    padding: "13px",
-    marginBottom: "15px",
-    width: "100%",
-    boxSizing: "border-box",
-    outline: "0"
-  }
-  const txtArea = {
-    height: "150px",
-    lineHeight: "150%",
-    resize: "vertical"
-  }
-  const submitBtn ={
-    width: "100%",
-    background: "#cc6666",
-    borderRadius: "5px",
-    boder: "0",
-    cursor: "pointer",
-    color:"white",
-    fontSize:"24px",
-    paddingTop:"10px",
-    paddingBottom:"10px",
-    transition: "all 0.3s",
-    marginTop: "-4px",
-    fontWeight: "700",
+
+  //send email from form below via emailjs
+  function sendEmail(e){
+    e.preventDefault();
+
+    emailjs.sendForm('service_fw4xu9w', 'template_t2dryya', e.target, 'user_urBSH40An3KgHVj0MTryY')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+
+    //confirm send and reset form.
+    alert("sent :)");
+    e.target.reset();
+
   }
   return(
     //simple input form, need to set up php email backend, or a service such as emailjs to send mail.
-  <form style={formStyle}>      
-    <input name="name" type="text" class="feedback-input" placeholder="Name" style={feedbackInput}/>   
-    <input name="email" type="text" class="feedback-input" placeholder="Email" style={feedbackInput}/>
-    <textarea name="text" class="feedback-input" placeholder="Comment"style={feedbackInput}></textarea>
-    <input type="submit" value="SUBMIT" style={submitBtn}/>
+  <form className="form-style" onSubmit={sendEmail}>      
+    <input name="user_name" type="text" className="feedback-input" placeholder="Name"/>   
+    <input name="user_email" type="text" className="feedback-input" placeholder="Email"/>
+    <textarea name="message" className="feedback-input contact-text" placeholder="Comment"></textarea>
+    <input type="submit" value="SUBMIT" className="submit-btn"/>
   </form>
   )
 }
