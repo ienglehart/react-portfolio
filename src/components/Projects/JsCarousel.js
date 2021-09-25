@@ -16,6 +16,7 @@ function updateSlidePosition() {
 const moveToNext = () => {
     if(slidePosition === totalSlides -1){
         slidePosition = 0;
+        console.log(slidePosition)
     } else {
         slidePosition++;
     }
@@ -35,14 +36,14 @@ export default class Carousel extends Component {
         return (
             <div className="carousel">
                 <div className="carousel-item carousel-item-visible">
-                    <img src="images/wario1.png"/>
+                    <img src="images/wario1.png" alt="wahh"/>
                 </div>
                 <div className="carousel-item">
-                    <img src="images/wario2.png"/>
+                    <img src="images/wario2.png" alt="wahh"/>
                     
                 </div>
                 <div className="carousel-item">
-                    <img src="images/wario3.png"/>
+                    <img src="images/wario3.png" alt="wahh"/>
                 </div>
 
                 <div className="carousel-actions">

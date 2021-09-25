@@ -2,6 +2,9 @@
     overflow:hidden;
     max-width: 600px; /*set equal to img width*/
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .carousel .carousel-items,
@@ -49,6 +52,18 @@
 @keyframes fadeVisibility {
     0%{
         opacity: 0;
+    }
+    20%{
+        opacity: .2;
+    }
+    40%{
+        opacity: .4;
+    }
+    60%{
+        opacity: .6;
+    }
+    80%{
+        opacity: .8;
     }
     100%{
         opacity: 1;
