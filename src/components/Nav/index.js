@@ -7,24 +7,21 @@ function Nav(props) {
 
   return (
     
-    <nav className="nav flex-row px-1 bg-light text-center">
-      <h3 className="place-center mx-3 mt-1 pr-6">
-        Ian Englehart
-      </h3>
+    <nav className="nav flex-row px-1 text-center">
       <div>
         <ul className="list-group list-group-horizontal flex-row my-auto">
-          <li className="list-group-item mx-2">
-            <a data-testid="link m-2 p-2" href="/react-portfolio">
-              About Me
+          <li className="list-group-item hvr">
+            <a data-testid="link m-2 p-2" className="nav-link" href="/react-portfolio">
+              Ian Englehart
             </a>
           </li>
-          <li className="list-group-item mx-2">
-            <a data-testid="link m-2 p-2" href="/react-portfolio/portfolio">
+          <li className="list-group-item hvr">
+            <a data-testid="link m-2 p-2" className="nav-link" href="/react-portfolio/portfolio">
               Projects
             </a>
           </li>
-          <li className="list-group-item mx-2">
-            <a data-testid="link m-2 p-2" href="/react-portfolio/contact">
+          <li className="list-group-item hvr">
+            <a data-testid="link m-2 p-2" className="nav-link" href="/react-portfolio/contact">
               Contact
             </a>
           </li>

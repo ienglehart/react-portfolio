@@ -21,7 +21,7 @@ function Contact() {
 
   }
   return(
-    //simple input form, need to set up php email backend, or a service such as emailjs to send mail.
+  //simple input form, sent using emailjs >add a modal confirmation, displays example of email?<
   <form className="form-style" onSubmit={sendEmail}>      
     <input name="user_name" type="text" className="feedback-input" placeholder="Name"/>   
     <input name="user_email" type="text" className="feedback-input" placeholder="Email"/>
