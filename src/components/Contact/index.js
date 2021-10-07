@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../../App.css';
 import emailjs from 'emailjs-com';
 
-function Contact() {
-
+export default class Contact extends Component {
+  render(){
   //send email from form below via emailjs
   function sendEmail(e){
     e.preventDefault();
@@ -30,5 +30,4 @@ function Contact() {
   </form>
   )
 }
-
-export default Contact;
+}

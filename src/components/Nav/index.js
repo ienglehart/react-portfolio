@@ -1,29 +1,26 @@
-import React from 'react';
+import { React, Component } from 'react';
+import { Link } from 'react-router-dom'
 
-function Nav(props) {
-  const {
-
-  } = props;
-
-  return (
-    
+export default class Nav  extends Component {
+  render(){
+  return(
     <nav className="nav flex-row px-1 text-center">
       <div>
         <ul className="list-group list-group-horizontal flex-row my-auto">
           <li className="list-group-item hvr">
-            <a data-testid="link m-2 p-2" className="nav-link" href="/react-portfolio">
+            <Link to='/react-portfolio/' data-testid="link m-2 p-2" className="nav-link">
               Ian Englehart
-            </a>
+            </Link>
           </li>
           <li className="list-group-item hvr">
-            <a data-testid="link m-2 p-2" className="nav-link" href="/react-portfolio/portfolio">
+            <Link to='/react-portfolio/portfolio' data-testid="link m-2 p-2" className="nav-link">
               Projects
-            </a>
+            </Link>
           </li>
           <li className="list-group-item hvr">
-            <a data-testid="link m-2 p-2" className="nav-link" href="/react-portfolio/contact">
+            <Link to='/react-portfolio/contact' data-testid="link m-2 p-2" className="nav-link">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -31,5 +28,4 @@ function Nav(props) {
     
   );
 }
-
-export default Nav;
+}

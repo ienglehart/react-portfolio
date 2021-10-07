@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Carousel from './Carousel.js';
 import JsCarousel from './JsCarousel';
 
-export default class Productlist extends Component {
+export default class Projects extends Component {
     render() {
         return (
             <React.Fragment>

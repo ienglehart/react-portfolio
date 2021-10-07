@@ -1,38 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from './components/Nav';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import About from './components/About/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import { Router, Route, Switch } from "react-router";
 
-const showAbout = () => {
-  if (window.location.pathname === "/react-portfolio"){
-    return <About />
-  }
-}
-const showProjects = () => {
-  if (window.location.pathname === "/react-portfolio/portfolio"){
-    return <Projects />
-  }
-}
-const showContact = () => {
-  if (window.location.pathname === "/react-portfolio/contact"){
-    return <Contact />
-  }
-}
-
-function App() {
+class App extends Component {
+  render(){
   return (
-    <div>
-      <Nav></Nav>
-      <main>
-        {showAbout()}
-        {showProjects()}
-        {showContact()}
-      </main> 
-    </div>
+    <Router>
+      <div>
+      <Nav/>
+      <Switch>
+        <Route path="/react-portfolio/" exact component={About} />
+        <Route path="/react-portfolio/portfolio" component={Projects} />
+        <Route path="/react-portfolio/contact" component={Contact} />
+      </Switch>
+      </div>
+    </Router>
   );
+  }
 }
 
 export default App;

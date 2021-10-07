@@ -1,9 +1,11 @@
 //import { render } from '@testing-library/react';
-import React from 'react';
+import { render } from '@testing-library/react';
+import React, { Component } from 'react';
 import '../../App.css'
 
-function About(){
-    return(
+export default class About extends Component{
+render(){
+return(
 <div className="card holder-card mx-auto">
     <div className="text-center p-3">
         <div className="accordion accordion">
@@ -59,7 +61,5 @@ function About(){
     </div>
 </div>
     )
-    
+}    
 };
-
-export default About;

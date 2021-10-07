@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../../App.css'
 
 
-
-function About(){
+export default class About extends Component{
+    render(){
     function clickHandler(e){
         var i;
         for (i = 0; i < 3; i++) {
@@ -39,6 +39,5 @@ function About(){
             </div>
         </div>
     )  
+}
 };
-
-export default About;
