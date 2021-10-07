@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from './components/Nav';
-import Projects from './components/Projects';
+import Projects from './components/Projects/index';
 import Contact from './components/Contact';
 import About from './components/About/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,9 +13,9 @@ class App extends Component {
       <div>
       <Nav/>
       <Switch>
-        <Route path="/react-portfolio/" exact component={About} />
-        <Route path="/react-portfolio/portfolio" component={Projects} />
-        <Route path="/react-portfolio/contact" component={Contact} />
+        <Route path="/" exact component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
       </Switch>
       </div>
     </Router>

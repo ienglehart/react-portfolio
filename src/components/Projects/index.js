@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import JsCarousel from './JsCarousel';
+import Carousel from './Carousel';
 
 export default class Projects extends Component {
     render() {
@@ -8,7 +8,7 @@ export default class Projects extends Component {
                 <div className="py-5">
                     <div className="container">
                         <div className="row pb-5">
-                            <JsCarousel />
+                            <Carousel />
                         </div>
                     </div>
                 </div>

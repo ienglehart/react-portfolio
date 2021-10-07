@@ -8,17 +8,17 @@ export default class Nav  extends Component {
       <div>
         <ul className="list-group list-group-horizontal flex-row my-auto">
           <li className="list-group-item hvr">
-            <Link to='/react-portfolio/' data-testid="link m-2 p-2" className="nav-link">
+            <Link to='/' data-testid="link m-2 p-2" className="nav-link">
               Ian Englehart
             </Link>
           </li>
           <li className="list-group-item hvr">
-            <Link to='/react-portfolio/portfolio' data-testid="link m-2 p-2" className="nav-link">
+            <Link to='/projects' data-testid="link m-2 p-2" className="nav-link">
               Projects
             </Link>
           </li>
           <li className="list-group-item hvr">
-            <Link to='/react-portfolio/contact' data-testid="link m-2 p-2" className="nav-link">
+            <Link to='/contact' data-testid="link m-2 p-2" className="nav-link">
               Contact
             </Link>
           </li>
