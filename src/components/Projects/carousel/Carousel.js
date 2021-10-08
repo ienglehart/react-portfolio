@@ -37,14 +37,14 @@ export default class Carousel extends Component {
     return (
         <div className="carousel">
             <div className="carousel-item carousel-item-visible">
-                <img src="images/wario1.png" alt="SLIDE ONE"/>
+                <img src="../../../public/images/wario1.png" alt="SLIDE ONE"/>
             </div>
             <div className="carousel-item">
-                <img src="images/wario2.png" alt="SLDIE 2"/>
+                <img src="images/wario2.png" alt="SLDIE two"/>
                     
             </div>
             <div className="carousel-item">
-                <img src="images/wario3.png" alt="SLIDE 3"/>
+                <img src="images/wario3.png" alt="SLIDE three"/>
             </div>
 
             <div className="carousel-actions">

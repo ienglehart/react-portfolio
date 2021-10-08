@@ -21,6 +21,7 @@
 .carousel .carousel-item-visible{
     display: block;
     animation: fadeVisibility 0.5s;
+    
 }
 
 .carousel .carousel-actions {

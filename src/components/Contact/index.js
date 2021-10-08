@@ -22,12 +22,15 @@ export default class Contact extends Component {
   }
   return(
   //simple input form, sent using emailjs >add a modal confirmation, displays example of email?<
-  <form className="form-style" onSubmit={sendEmail}>      
+  <div>
+  <h2 className="contact-title">Contact Me!</h2>
+  <form className="form-style" onSubmit={sendEmail}>    
     <input name="user_name" type="text" className="feedback-input" placeholder="Name"/>   
     <input name="user_email" type="text" className="feedback-input" placeholder="Email"/>
     <textarea name="message" className="feedback-input contact-text" placeholder="Comment"></textarea>
     <input type="submit" value="SUBMIT" className="submit-btn"/>
   </form>
+  </div>
   )
 }
 }

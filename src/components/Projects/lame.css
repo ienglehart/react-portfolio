@@ -1,0 +1,22 @@
+.project-body{
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+.project-container{
+    margin: 20px;
+}
+.project-image {
+    float: left;
+    width: 30%;
+    height: 200px;
+    background: #ccc;
+    padding: 20px;
+}
+.project-info {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    height: 200px;
+    background-color: #f1f1f1;
+  }

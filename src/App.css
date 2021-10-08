@@ -123,9 +123,13 @@
 */
 
 /* Contact - Contact/index.js*/
+.contact-title{
+  text-align: center;
+  margin-top: 50px;
+}
 .form-style { 
   max-width:420px; 
-  margin:50px auto; 
+  margin: 25px auto; 
 }
 
 .feedback-input {
@@ -145,8 +149,8 @@
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid var(--dark-red); }
-
+.feedback-input:focus{ border:2px solid var(--dark-red); 
+}
 .contact-text {
   height: 150px;
   line-height: 150%;
@@ -170,75 +174,84 @@
 }
 .submit-btn:hover { background:var(--dark-red); }
 
-.carousel{
-  overflow:hidden;
-  max-width: 600px; /*set equal to img width*/
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-.carousel .carousel-items,
-.carousel .carousel-items-hidden{
-  display:none;
-}
-
-.carousel .carousel-items{
+/* Project Section*/
+.project-body{
+  display: grid;
+  place-content: center;
   width: 100%;
-  max-width:600px;
-  height: auto;
+  background-color: var(--bg);
+}
+.project-container{
+  margin-top: 40px;
+  width: 800px;
+}
+.project-image {
+  float: left;
+  width: 30%;
+  height: 200px;
+  background: var(--bg);
+  object-fit: fill;
+  transition: transform .2s;
+}
+.project-image:hover{
+  transform: scale(1.75);
+  animation: cornerTransitionIn 0.2s;
+  border-radius: 20px;
+}
+.project-image:not(:hover){
+  animation: cornerTransitionOut 0.2s;
+}
+.project-info {
+  border-right: 6px solid var(--dark-red);
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 200px;
+  background-color: var(--light);
+}
+.project-text{
+  background:none;
+  font-family: sans-serif;
 }
 
-.carousel .carousel-item-visible{
-  display: block;
-  animation: fadeVisibility 0.5s;
+/*rounded corner transition in and out for hover zoom on images in project section*/
+@keyframes cornerTransitionIn{
+0%{
+   border-radius: 0px;
 }
-
-.carousel .carousel-actions {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
+20%{
+  border-radius: 4px;
 }
-
-.carousel .carousel-actions button{
-  border-radius: 50px;
-  border: 0;
-  cursor: pointer;
-  width:40px;
-  height: 40px;
-  /*customise buttons */
+40%{
+  border-radius: 8px;
 }
-
-.carousel .carousel-actions button#carousel-btn-prev{
-  margin-left: 20px;
+60%{
+  border-radius: 12px;
 }
-.carousel .carousel-actions button#carousel-btn-next{
-  margin-right:20px;
+80%{
+  border-radius: 16px;
 }
-
-@keyframes fadeVisibility {
+100%{
+  border-radius: 20px;
+}
+}
+@keyframes cornerTransitionOut{
   0%{
-      opacity: 0;
-  }
-  20%{
-      opacity: .2;
-  }
-  40%{
-      opacity: .4;
-  }
-  60%{
-      opacity: .6;
-  }
-  80%{
-      opacity: .8;
-  }
-  100%{
-      opacity: 1;
-      transform: opacity linear;
-  }
+    border-radius: 20px;
+ }
+ 20%{
+   border-radius: 16px;
+ }
+ 40%{
+   border-radius: 12px;
+ }
+ 60%{
+   border-radius: 8px;
+ }
+ 80%{
+   border-radius: 4px;
+ }
+ 100%{
+   border-radius: 0px;
+ }
 }
