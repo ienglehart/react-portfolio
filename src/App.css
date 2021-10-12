@@ -66,7 +66,7 @@
   background: transparent;
 }
 
-/* Accordion - About/index.js*/
+/* About Section - About/index.js*/
 .accordion-button {
   background-color: var(--brown); 
   border: none;
@@ -97,6 +97,12 @@
 .dropdown{
   background-color: var(--brown);
   color: var(--light);
+}
+
+.about-icon{
+  background: none;
+  margin-left: 8px;
+  margin-bottom: 2px;
 }
 
 /*Accordion from accordion.js 
@@ -180,10 +186,15 @@
   place-content: center;
   width: 100%;
   background-color: var(--bg);
+  margin-bottom: 40px;
 }
 .project-container{
   margin-top: 40px;
   width: 800px;
+  transition: linear .3s;
+}
+.project-container:hover{
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2)
 }
 .project-image {
   float: left;
