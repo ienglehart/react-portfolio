@@ -5,7 +5,6 @@ import Projects from './components/Projects/lameProjects';
 import Contact from './components/Contact';
 import About from './components/About/index';
 import Footer from'./components/Footer/index';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   render(){
