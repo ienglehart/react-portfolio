@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../../App.css';
-import img1 from './img/wario1.png';
-import img2 from './img/wario2.png';
-import img3 from './img/wario3.png';
+import img1 from './img/shirt-store.png';
+import img2 from './img/portfolio.png';
+import img3 from './img/chattin.png';
 
 export default class Projects extends Component {
     render() {

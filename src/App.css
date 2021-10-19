@@ -177,7 +177,7 @@
   width: 30%;
   height: 225px;
   background: var(--bg);
-  object-fit: fill;
+  object-fit: cover;
   transition: transform .2s;
 }
 .project-image:hover{
