@@ -29,7 +29,7 @@ export default class Footer extends Component {
         return (
             <div>
             <div style={phantom}></div>
-            <div style={style}>Fueled by Caffiene :)   <a style={icons} href="https://icons8.com">Icons</a></div>
+            <div style={style}>Fueled by Caffiene   <a style={icons} href="https://icons8.com">Icons</a></div>
             </div>
         )
     }

@@ -33,11 +33,11 @@ export default class Projects extends Component {
             <div className="project-container">
                 <img className="project-image" src={img3} alt="Image failed to load"></img>
                 <div className="project-info"> 
-                    <h1 className="project-text">Weather App</h1> 
+                    <h1 className="project-text">Just Chattin'</h1> 
                     <ul className="project-text">
                         <li className="project-text"><a className="project-link" href="https://github.com/jcgom3/Just-Chattin">Github Link</a></li>
                         <li className="project-text"><a className="project-link" href="https://just-chattin.herokuapp.com/login">Live Site</a></li>
-                        <li className="project-text">A Chat app using socket.io that me and some classmates from the UCF bootcamp made for a group project.</li>
+                        <li className="project-text">A Chat app using socket.io that me and some classmates from the UCF bootcamp made as a group project.</li>
                     </ul>
                 </div>
             </div> 

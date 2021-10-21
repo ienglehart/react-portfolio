@@ -23,7 +23,7 @@ return(
           </Card.Header>
           <Accordion.Collapse eventKey="0">
             <Card.Body className="accordion-body">
-            Hi! I'm Ian and im looking for opportunities in coding.
+            Hi! I'm Ian Englehart, an aspiring web developer based in central Florida who is looking for opportunities to work and further my knowledge. I enjoy coding front end the most, but I am proficient in full stack development.
             </Card.Body>
           </Accordion.Collapse>
         </Card>
